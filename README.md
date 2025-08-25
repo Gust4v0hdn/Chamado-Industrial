@@ -1,5 +1,5 @@
 # Chamado-Industrial
-Este é um sistema de automação para relatórios de problemas, dividido em componentes. O BOTAO FL.cpp inicia o front-end Front-end.py, que coleta dados do erro e os salva no mensagem.json. Então, dois backends, enviodedados.c e Back-end.py, usam esses dados para notificar via Telegram e criar um ticket no GLPI. O registro.log grava todas as ações.
+This is an automated system for reporting problems, divided into components. The **`BOTAO FL.cpp`** file starts the **`Front-end.py`** front end, which collects error data and saves it to **`mensagem.json`**. Then, two back ends, **`enviodedados.c`** and **`Back-end.py`**, use this data to send notifications via Telegram and create a ticket in GLPI. The **`registro.log`** file records all actions.
 This code functions as a ticket simplifier in the IT sector, facilitating quick and precise communication in areas that require immediate attention. It operates
 
 Here is an in-depth analysis of each component, focusing on its technical implementation.
