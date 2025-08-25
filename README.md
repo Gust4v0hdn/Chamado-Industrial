@@ -20,7 +20,7 @@ Here is an in-depth analysis of each component, focusing on its technical implem
     
     **GUI Implementation**: Uses the `WNDCLASS` structure and the `CreateWindowEx` function with the style `WS_EX_TOPMOST | WS_EX_TOOLWINDOW` to create a pop-up window without a title bar that always remains on top of other windows.
     
-    ![image (2).png](attachment:df75c627-4eb5-4ad6-9fa3-6f63c89296df:1012cd8f-e74c-4835-acf6-69dad7b4da32.png)
+    ![[image (2).png]]
     
 1. **Event Management**: The `WindowProc` function acts as a [**`<h color="default-background"><h color="default">callback</h></h>`**](https://www.youtube.com/watch?v=gcE0Gx6TgT4) that processes messages from the operating system's event queue.
 - **Drag-and-Drop**: Handling the `WM_LBUTTONDOWN` event and capturing mouse messages (`SetCapture`) allows the user to drag the window. The logic is based on the difference between the current mouse position and the initial position (`ptLastMousePos`).
