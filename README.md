@@ -20,7 +20,7 @@ Here is an in-depth analysis of each component, focusing on its technical implem
     
     **GUI Implementation**: Uses the `WNDCLASS` structure and the `CreateWindowEx` function with the style `WS_EX_TOPMOST | WS_EX_TOOLWINDOW` to create a pop-up window without a title bar that always remains on top of other windows.
     
-  ![image (2).png](Chamado-Industrial/image (2).png)
+  ![image 2]Chamado-Industrial/image (2).png)
     
 1. **Event Management**: The `WindowProc` function acts as a [**`<h color="default-background"><h color="default">callback</h></h>`**](https://www.youtube.com/watch?v=gcE0Gx6TgT4) that processes messages from the operating system's event queue.
 - **Drag-and-Drop**: Handling the `WM_LBUTTONDOWN` event and capturing mouse messages (`SetCapture`) allows the user to drag the window. The logic is based on the difference between the current mouse position and the initial position (`ptLastMousePos`).
@@ -35,13 +35,13 @@ This script uses the native `tkinter` library for GUI construction and interacts
 
 - **GUI Architecture**: The script creates a minimalist interface with buttons that represent problems. Each button is associated with a *handler* function (`on_click`) that is triggered by mouse events.
 - 
-  ![image (3).png](Chamado-Industrial/image (3).png)
+  ![image 3](Chamado-Industrial/image (3).png)
   
 - **Connectivity Verification**: The `check_internet_connection()` method uses the `socket` library for low-level network connectivity verification.
     - It attempts to establish a TCP connection (`socket.create_connection`) with the address `www.google.com` on port 80, with a `timeout` of 6 seconds.
     - The `update_status_indicator()` is executed in a separate *thread* using `threading.Thread`, which prevents the GUI from freezing during network checking.
     
-    ![image (4).png](Chamado-Industrial/image (4).png)
+    ![image 4](Chamado-Industrial/image (4).png)
     
 - **JSON Handling**:
     - The `on_click()` function collects information from the operating system, such as the host name (`platform.node()`).
